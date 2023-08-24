@@ -1,0 +1,9 @@
+sudo mv application /var/www/application 
+sudo chown -R $USER:$USER /var/www/application 
+sudo touch /etc/nginx/sites-available/application
+sudo chown -R $USER:$USER /etc/nginx/sites-available/application 
+cd ~
+cd setup
+cp -r application /etc/nginx/sites-available/application 
+sudo ln -s /etc/nginx/sites-available/application /etc/nginx/sites-enabled/
+

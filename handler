@@ -1,0 +1,5 @@
+sudo mv application /var/www/application 
+sudo chown -R $USER:$USER /var/www/application 
+sudo chown -R www-data:www-data /var/www/application/storage
+sudo chown -R www-data:www-data /var/www/application/bootstrap/cache
+sudo chmod ugo+x /var/www/application/storage

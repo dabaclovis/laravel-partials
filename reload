@@ -1,0 +1,8 @@
+sudo systemctl reload nginx
+sudo nginx -t
+sudo ufw allow OpenSSH 
+sudo ufw allow "Nginx Full"
+sudo systemctl enable nginx
+sudo systemctl restart nginx 
+
+sudo ufw app list 
